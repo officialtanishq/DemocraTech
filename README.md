@@ -34,5 +34,6 @@ DemocraTech aims to create an anonymous, unhackable voting system on the blockch
 
 5. zkSNARKs: Zero-Knowledge Succinct Non-Interactive Argument of Knowledge
 
-**Contributors**
+**Contributor**
+
 Tanishq Singh
