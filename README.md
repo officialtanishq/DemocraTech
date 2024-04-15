@@ -2,6 +2,7 @@
 Trustworthy Voting Systems
 
 **Introduction**
+
 DemocraTech aims to create an anonymous, unhackable voting system on the blockchain. The goal is to replace traditional paper-based voting methods with a cost-effective blockchain-based solution. This system ensures anonymity by allowing everyone to vote only once, while ensuring that no one can determine which vote is assigned to which voter through the use of Zero-Knowledge Proofs.
 
 **Features**
@@ -12,23 +13,26 @@ DemocraTech aims to create an anonymous, unhackable voting system on the blockch
 3. Cost-Effective: By eliminating the need for physical ballot papers, printing, transportation, and manual vote counting, the blockchain-based voting system offers a cost-effective alternative to traditional paper-based voting methods.
 
 **How it Works**
-Voter Authentication: Voters connect their wallets (e.g., MetaMask) to the voting platform to authenticate their identity on the blockchain.
 
-Vote Casting: Once authenticated, voters can cast their votes securely through the voting interface provided by the platform. Each vote is encrypted to ensure anonymity.
+1. Voter Authentication: Voters connect their wallets (e.g., MetaMask) to the voting platform to authenticate their identity on the blockchain.
 
-Blockchain Recording: The encrypted votes are recorded on the blockchain, making them immutable and transparent. Zero-Knowledge Proofs are used to verify the validity of each vote without revealing the identity of the voter.
+2. Vote Casting: Once authenticated, voters can cast their votes securely through the voting interface provided by the platform. Each vote is encrypted to ensure anonymity.
 
-Results Tabulation: After the voting period ends, the votes are tallied using smart contracts on the blockchain. The results are publicly accessible and cannot be altered.
+3. Blockchain Recording: The encrypted votes are recorded on the blockchain, making them immutable and transparent. Zero-Knowledge Proofs are used to verify the validity of each vote without revealing the identity of the voter.
+
+4. Results Tabulation: After the voting period ends, the votes are tallied using smart contracts on the blockchain. The results are publicly accessible and cannot be altered.
 
 
 **Technologies Used**
-ReactJS: Frontend development framework for building the user interface of the voting system.
+1. ReactJS: Frontend development framework for building the user interface of the voting system.
 
-Ethereum Blockchain: Utilized for recording and storing the votes securely on the blockchain.
+2. Ethereum Blockchain: Utilized for recording and storing the votes securely on the blockchain.
 
-Solidity: Smart contract programming language used for implementing the voting system's logic on the Ethereum blockchain.
+3. Solidity: Smart contract programming language used for implementing the voting system's logic on the Ethereum blockchain.
 
-Web3.js: JavaScript library for interacting with the Ethereum blockchain from the frontend application.
+4. Web3.js: JavaScript library for interacting with the Ethereum blockchain from the frontend application.
+
+5. zkSNARKs: Zero-Knowledge Succinct Non-Interactive Argument of Knowledge
 
 **Contributors**
 Tanishq Singh
