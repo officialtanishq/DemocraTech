@@ -1,6 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2980b9, #2c3e50);
+    color: #fff;
+}
+
 .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
     text-align: center;
-    margin-top: 50px;
+}
+
+.connect-section {
+    margin-bottom: 40px;
+}
+
+.vote-section {
+    margin-bottom: 20px;
 }
 
 button {
@@ -8,10 +35,30 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 input {
     padding: 8px;
     margin-right: 10px;
     font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
 }
