@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Web3 from 'web3';
+import './App.css'; // Import your CSS file
+import logo from './logo.png'; // Import your logo
 
 function App() {
     const [web3, setWeb3] = useState(null);
@@ -41,29 +43,39 @@ function App() {
 
     return (
         <div className="App">
-            <h1>DemocraTech: Trustworthy Voting Systems</h1>
-            <p>Connect your wallet to vote:</p>
-            <button onClick={connectToBlockchain}>Connect Wallet</button>
-            {account && (
-                <div>
-                    <h2>Vote</h2>
-                    {!voted ? (
-                        <div>
-                            <input
-                                type="text"
-                                placeholder="Enter your vote"
-                                value={voteOption}
-                                onChange={(e) => setVoteOption(e.target.value)}
-                            />
-                            <button onClick={vote} disabled={!voteOption || loading}>
-                                {loading ? 'Submitting Vote...' : 'Submit Vote'}
-                            </button>
-                        </div>
-                    ) : (
-                        <p>You have already voted.</p>
-                    )}
-                </div>
-            )}
+            <header>
+                <img src={logo} alt="Logo" className="logo" />
+                <h1>DemocraTech: Trustworthy Voting Systems</h1>
+            </header>
+            <main>
+                <section className="connect-section">
+                    <p>Connect your wallet to vote:</p>
+                    <button onClick={connectToBlockchain}>Connect Wallet</button>
+                </section>
+                {account && (
+                    <section className="vote-section">
+                        <h2>Vote</h2>
+                        {!voted ? (
+                            <div>
+                                <input
+                                    type="text"
+                                    placeholder="Enter your vote"
+                                    value={voteOption}
+                                    onChange={(e) => setVoteOption(e.target.value)}
+                                />
+                                <button onClick={vote} disabled={!voteOption || loading}>
+                                    {loading ? 'Submitting Vote...' : 'Submit Vote'}
+                                </button>
+                            </div>
+                        ) : (
+                            <p>You have already voted.</p>
+                        )}
+                    </section>
+                )}
+            </main>
+            <footer>
+                <p>© 2024 DemocraTech by Blaze Brigade. All rights reserved.</p>
+            </footer>
         </div>
     );
 }
