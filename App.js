@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 import Web3 from 'web3';
 import './App.css'; // Import your CSS file
 import logo from './logo.png'; // Import your logo
+import VotingABI from './VotingABI.json';
 
 function App() {
     const [web3, setWeb3] = useState(null);
     const [account, setAccount] = useState(null);
+    const [contract, setContract] = useState(null);
     const [voted, setVoted] = useState(false);
     const [loading, setLoading] = useState(false);
     const [voteOption, setVoteOption] = useState('');
+    const contractAddress = '0x7EF2e0048f5bAeDe046f6BF797943daF4ED8CB47'; // Your contract address
+
 
     const connectToBlockchain = async () => {
         try {
