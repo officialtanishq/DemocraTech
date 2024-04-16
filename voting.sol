@@ -11,11 +11,13 @@ contract Voting {
     mapping (bytes32 => bool) public voters;
     uint public votingEndDateTime;
 
-
-
     modifier onlyOwner {
         require(msg.sender == owner);
         _;
+    }
+
+    constructor() {
+        owner = msg.sender;
     }
 
     function addCandidate(string memory candidateName) public onlyOwner {
@@ -33,7 +35,7 @@ contract Voting {
         voters[keccak256(abi.encodePacked(msg.sender))] = true;
     }
 
-    function getAllVotesOfCandiates() public view returns (Candidate[] memory) {
+    function getAllVotesOfCandidates() public view returns (Candidate[] memory) {
         return candidates;
     }
 
