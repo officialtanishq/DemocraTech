@@ -6,6 +6,14 @@ body {
     color: #fff;
 }
 
+.logo {
+    max-width: 250px; /* Adjust the size as needed */
+    height: auto;
+    margin-left: 188px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; /* Add some space below the logo */
+}
+
 .App {
     display: flex;
     flex-direction: column;
